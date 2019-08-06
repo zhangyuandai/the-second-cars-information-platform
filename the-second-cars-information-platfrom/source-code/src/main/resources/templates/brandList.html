@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>userList</title>
+    <link rel="stylesheet" th:href="@{cars/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>品牌列表</h1>
+<br/><br/>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Brand Name</th>
+            <th>Picture</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="brand : ${brands}">
+            <th scope="row" th:text="${brand.id}">1</th>
+            <td th:text="${brand.brandname}">neo</td>
+            <td ><img src="" th:src="@{'cars/img/'+${brand.brandname}+.jpg}"></td>
+            <td><a th:href="@{/brandtoEdit(id=${brand.id})}">edit</a></td>
+            <td><a th:href="@{/branddelete(id=${brand.id})}">delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a  href="admin.html" th:href="@{/brandadd.html}" class="btn btn-info">添加</a>
+        <a  href="admin.html" th:href="@{/admin.html}" class="btn btn-info">退出</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" th:href="@{cars/css/bootstrap.min.css}">
+		
+		<script src="js/jquery-3.3.1.min.js" th:src="@{cars/js/jquery-3.3.1.min.js}"></script>
+		<script src="js/bootstrap.min.js" th:src="@{cars/js/bootstrap.min.js}"></script>
+		<title>后台管理</title>
+		
+		<style type="text/css">
+			@media (min-width: 768px) {
+				#slider_sub {
+					width: 250px;
+					margin-top: 51px;
+					position: absolute;
+					z-index: 1;
+					height: 600px;
+				}
+				.mysearch {
+					margin: 20px 0;
+				}
+				.page_main {
+					margin-left: 255px;
+				}
+			}
+
+			.sectionDiv {
+				position: absolute;
+				display: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#slider_sub">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				 </button>
+				 
+				<a href="#" class="navbar-brand">网站后台管理</a>
+			</div>
+			
+			<ul class="nav navbar-nav navbar-right" style="margin-right: 25px;">
+				<li><a href="#"><span class="badge" style="background: #f40;">23</span></a></li>
+				<li><a href="login2.html" th:href="login2"><span class="glyphicon glyphicon-off">&nbsp;注销</span></a></li>
+			</ul>	
+				
+			<!-- 侧边功能栏 -->
+			<div class="row">
+			<div class="navbar-default navbar-collapse col-md-2" id="slider_sub">
+				<ul class="nav">
+					<li>
+						
+						<div class="input-group mysearch">
+							<input type="text"  class="form-control"/>
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-default">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</li>
+					
+					<li>
+						<a href="#sub1" th:href="@{#sub1}"  data-toggle="collapse">系统功能<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+						<ul id="sub1" class="nav collapse">
+							<li><a href="/users" th:href="@{/users}" class="nav2"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+							<li><a href="#" class="nav2"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;日志信息</a></li>
+							<li><a href="admin.html" th:href="@{admin.html}"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;退出</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#sub2" th:href="@{#sub2}" data-toggle="collapse">栏目功能<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+						<ul id="sub2" class="nav collapse">
+							<li><a href="/allbrands" th:href="@{/allbrands}"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;品牌管理</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;车型管理</a></li>
+							<li><a href="admin.html" th:href="@{admin.html}"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;退出</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#sub3" th:href="@{#sub3}" data-toggle="collapse">产品功能<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+						<ul id="sub3" class="nav collapse">
+							<li><a href="/cars" th:href="@{/cars}"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;车辆信息管理</a></li>
+							<li><a href="admin.html" th:href="@{admin.html}"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;退出</a></li>
+						</ul>
+					</li>
+					
+<!--					<li>-->
+<!--						<a href="#sub4" th:href="@{#sub4}" data-toggle="collapse">新闻功能<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>-->
+<!--						<ul id="sub4" class="nav collapse">-->
+<!--							<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;系统信息</a></li>-->
+<!--							<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;管理员管理</a></li>-->
+<!--							<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;日志信息</a></li>-->
+<!--							<li><a href="admin.html" th:href="@{admin.html}"><span class="glyphicon glyphicon-remove-circle"></span>&nbsp;退出</a></li>-->
+<!--						</ul>-->
+<!--					</li>-->
+				</ul>
+
+
+				</div>
+			</div>
+			
+		</nav>
+		
+	</body>
+
+</html>

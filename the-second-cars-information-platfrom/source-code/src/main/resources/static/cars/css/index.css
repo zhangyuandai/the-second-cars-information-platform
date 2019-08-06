@@ -1,0 +1,216 @@
+body,button,img,input,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,ol{ padding: 0; margin: 0;}
+	    	/*body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,li,ol,p,pre,td,textarea,th,ul,img{margin:0;padding:0; font-weight:normal; }*/
+ol,ul,dl,dt{list-style:none}
+
+body {
+	background: #FFFFFF;
+}
+
+#main1 div{
+	border: 1px solid #C0A16B;
+	/*background-color: #f40;*/
+}
+
+/*品牌*/
+#main1_left  h3 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#main1_left .ch1 {
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	border: 0;
+}
+
+#main1_left .ch1 img{
+	float: left;
+	display: block;
+	margin-bottom: 15px;
+}
+
+#main1_left .ch1 a{
+	margin-left: 10px;
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+#main1_left .ch1 a:hover{
+	text-decoration: underline;
+}
+
+/*车型*/
+#main1_right  h3 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#main1_right  .ch2{
+	border: 0;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+#main1_right .ch2 img{
+	float: left;
+	display: block;
+	margin-bottom: 16px;
+}
+
+#main1_right .ch2 a{
+	margin-left: 60px;
+	color: black;
+	text-decoration: none;
+	display: block;
+}s
+
+#main1_right .ch2 a:hover{
+	text-decoration: underline;
+}
+
+
+/*分期购*/	
+#main2 div{
+	border: 1px solid #C0A16B;
+}
+
+#main2  #main2_1 div{
+	border: 0;
+}
+
+#main2 #main2_1 h2{
+	color: orangered;
+}
+
+#main2 #main2_1  ul {
+	float: left;
+}
+
+#main2 #main2_1  ul li{
+	float: left;
+}
+
+#main2 #main2_1  ul li span{
+	font-size: 18px;
+	font-family: 400;
+	color: #585858;
+}
+
+#main2 #main2_1  ul li span b{
+	font-size: 34px;
+	font-family: 400;
+	color: #ff5a37;
+}
+
+#main2 #main2_1 img{
+	float: right;
+	margin-right: 1px;
+	margin-bottom: 16px;
+}
+
+/*推荐*/
+#tuijian div {
+	border: 1px solid #C0A16B;
+}
+
+#tuijian #main3 div {
+	border: 0;
+}
+
+#tuijian #main3 #main3_1 div {
+	border: 0;
+}
+
+#tuijian #main3 #main3_1 h2 {
+	color: orangered;
+}
+
+#tuijian #main3 #main3_1 a {
+	float: left;
+	margin-left: 10px;
+	font-size: 18px;
+	font-family: 400;
+	text-decoration: none;
+}
+
+#tuijian #main3 #main3_1 a p{
+	color: black;
+}
+
+#tuijian #main3 #main3_1 a span{
+	color: #f40;
+}
+
+
+/*特惠*/
+#tehui div {
+	border: 1px solid #C0A16B;
+}
+
+#tehui #main4 div {
+	border: 0;
+}
+
+#tehui #main4 #main4_1 div {
+	border: 0;
+}
+
+#tehui #main4 #main4_1 h2 {
+	color: orangered;
+}
+
+#tehui #main4 #main4_1 ul {
+	float: left;
+}
+
+#tehui #main4 #main4_1 ul li{
+	float: left;
+}
+
+#tehui #main4 #main4_1 ul li div {
+	border: 0px;
+}
+
+#tehui #main4 #main4_1 ul li div h4{
+	margin-bottom: 8px;
+	/*color: #999999;*/
+}
+
+#tehui #main4 #main4_1 ul li div .s1{
+	margin-bottom: 8px;
+	color: #999999;
+}
+
+#tehui #main4 #main4_1 ul li div .s2{
+	margin-bottom: 8px;
+	color: #f40;
+	font-size: 18px;
+	font-family: 400;
+}
+
+/*尾部*/
+#footer {
+	/*background: #444444;
+	height: 200px;
+	width: 100%;*/
+}
+
+#footer hr {
+	height:5px;
+	border:none;
+	border-top:5px solid orangered;
+}
+
+#footer .foot {
+	margin: 0 atuo; 
+	text-align: center;
+}
+
+#footer .foot p {
+	margin-bottom: 10px;
+}
